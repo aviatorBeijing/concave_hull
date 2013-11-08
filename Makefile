@@ -3,8 +3,8 @@ AR = ar
 OBJS = hull.o ch.o io.o rand.o pointops.o fg.o 
 HDRS = hull.h points.h pointsites.h stormacs.h 
 SRC = hull.c ch.c io.c rand.c pointops.c fg.c 
-PROG = hull 
-BINDIR = ./bin 
+PROG = hull
+BINDIR = ./bin
 LIBDIR = ./lib # or just /usr/lib on a 32 bit machine?
 LIB = $(LIBDIR)/lib$(PROG).a
  
