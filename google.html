@@ -15,34 +15,6 @@
 		<script>
 			var map;
 			var markers =[];
-			var iterator = 0;
-
-			function drop() {
-				for (var i = 0; i < neighborhoods.length; i++) {
-					setTimeout(function() {
-						addMarker();
-					}, i * 150);
-				}
-			}
-
-			var neighborhoods = [
-			new google.maps.LatLng(39.91283,  116.343575),	
-			new google.maps.LatLng(40.007492, 116.462761),	
-			new google.maps.LatLng(40.000286, 116.478958),	
-			new google.maps.LatLng(39.984415, 116.490152),
-			new google.maps.LatLng(39.921249, 116.3458),	
-			new google.maps.LatLng(39.931579, 116.376639)
-			];
-
-			function addMarker() {
-				markers.push(new google.maps.Marker({
-					position: neighborhoods[iterator],
-					map: map,
-					draggable: false,
-					animation: google.maps.Animation.DROP
-				}));
-				iterator++;
-			}
 
 			function initialize() {
 				var myLatlng = new google.maps.LatLng( 39.928231, 116.497186);
@@ -120,10 +92,6 @@
 			}
 
 			google.maps.event.addDomListener(window, 'load', initialize);
-			setTimeout(function() {
-				drop();
-			}, 2000);
-
 		</script>
 	</head>
 	<body>
