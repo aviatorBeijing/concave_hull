@@ -9,7 +9,7 @@ Reference:
 http://www.netlib.org/voronoi/hull.html
 http://stackoverflow.com/questions/6833243/how-can-i-find-the-alpha-shape-concave-hull-of-a-2d-point-cloud
 
-<code>
+<p>
 Build:
 On Linux platform:
 1) unzip concave_hull-master.zip
@@ -19,4 +19,4 @@ On Linux platform:
 5) python hull.py
 6) Insert the output in the "google.html"
 7) View "google.html" in your favorite HTML viewer. Vola!
-</code>
+</p>
