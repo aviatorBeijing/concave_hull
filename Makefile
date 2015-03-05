@@ -7,7 +7,6 @@ PROG = hull
 BINDIR = ./bin
 LIBDIR = ./lib # or just /usr/lib on a 32 bit machine?
 LIB = $(LIBDIR)/lib$(PROG).a
- 
 all : $(PROG) rsites
 	cp $(PROG) $(BINDIR)/.
 	cp rsites $(BINDIR)/.
@@ -25,3 +24,4 @@ rsites : rsites.c
  
 clean :
 	-rm -f $(OBJS) hullmain.o core a.out $(PROG)
+# comments
