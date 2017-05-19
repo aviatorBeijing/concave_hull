@@ -212,8 +212,7 @@ void make_output(simplex *root, void *(*visit_gen)(simplex*, visit_func* visit),
 
 
 void main(int argc, char **argv) {
-     FILE *DFILE;
-     DFILE = stderr;
+    DFILE = stderr;
 
 	long	seed = 0;
 	short	shuffle = 0,
